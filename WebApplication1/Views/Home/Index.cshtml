@@ -1,52 +1,78 @@
 @{
-    ViewData["Title"] = "Home | Divyansh Rai - .NET Developer Portfolio";
-    ViewData["Description"] = "Portfolio of Divyansh Rai, an aspiring .NET developer skilled in ASP.NET Core, C#, and web development.";
-    ViewData["Keywords"] = "Divyansh Rai, .NET Developer, ASP.NET Core, C#, Web Developer, Portfolio";
+    ViewData["Title"] = "Home Page";
 }
 
-@section Head {
-    <!-- Basic SEO -->
-    <meta name="description" content="@ViewData["Description"]" />
-    <meta name="keywords" content="@ViewData["Keywords"]" />
-    <meta name="author" content="Divyansh Rai" />
-    <meta name="robots" content="index, follow" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
 
-    <!-- Open Graph (for social sharing) -->
-    <meta property="og:title" content="@ViewData["Title"]" />
-    <meta property="og:description" content="@ViewData["Description"]" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourwebsite.com/" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
 
-    <!-- Responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-}
+        .container {
+            text-align: center;
+            padding: 60px;
+        }
 
-<!-- Main Content -->
-<div class="text-center">
-    <h1 class="display-4">Welcome to My Portfolio</h1>
-    
-    <p>
-        I am a passionate <strong>.NET Developer</strong> specializing in 
-        <strong>ASP.NET Core</strong>, building scalable and modern web applications.
-    </p>
+        h1 {
+            color: #0077cc;
+            font-size: 40px;
+        }
 
-    <p>
-        Learn more about building web apps with 
-        <a href="https://learn.microsoft.com/aspnet/core" target="_blank">
-            ASP.NET Core
-        </a>.
-    </p>
+        p {
+            color: #333;
+            font-size: 18px;
+            max-width: 600px;
+            margin: 10px auto;
+        }
 
-    <hr />
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
 
-    <h2>What I Do</h2>
-    <p>
-        I develop secure, high-performance backend systems and responsive web applications 
-        using modern technologies.
-    </p>
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
 
-    <h2>Skills</h2>
-    <p>
-        C# • ASP.NET Core • SQL Server • HTML • CSS • JavaScript
-    </p>
-</div>
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h1>Welcome 👋</h1>
+
+            <p>
+                This is a simple ASP.NET Core page with clean design and no dependencies.
+            </p>
+
+            <p>
+                You can build modern web applications using 
+                <a href="https://learn.microsoft.com/aspnet/core" target="_blank">
+                    ASP.NET Core
+                </a>.
+            </p>
+
+            <p>
+                Start simple. Improve step by step 🚀
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
